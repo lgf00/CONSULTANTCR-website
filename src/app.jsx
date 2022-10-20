@@ -1,12 +1,12 @@
 import React from 'react'
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import './app.css'
 import Home from './routes/home';
 import WWD from './routes/wwd';
 import About from './routes/about';
 import Contact from './routes/contact';
-import ErrorPage from './routes/error-page'
-
+import ErrorPage from './routes/error-page';
+import Nav from './components/nav';
 
 export default function App() {
   return (
@@ -27,26 +27,18 @@ export default function App() {
 function Layout() {
     return (
         <>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to={'/'}>Home</Link>
-                    </li>
-                    <li>
-                        <Link to={'what-we-do'}>What We Do</Link>
-                    </li>
-                    <li>
-                        <Link to={'about'}>About</Link>
-                    </li>
-                    <li>
-                        <Link to={'contact'}>Contact</Link>
-                    </li>
-                </ul>
-            </nav>
+          <Nav/>
+          <div className="outlet">
             <Outlet/>
-            <footer>
-                
-            </footer>
+          </div>
+          <footer>
+            <img src="/logo-sm.png" alt="logo" width="82px"/>
+            <div className="footer-info">
+              <p>E:aguzman@consultantcr.com</p>
+              <p>M: (617) 949-0786</p>
+              <p>Cambridge MA, 02139</p>
+            </div>
+          </footer>
         </>
     );
 }

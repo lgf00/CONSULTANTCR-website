@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <div>home</div>
+    <img src="/logo.png" alt="full logo"></img>
   )
 }
