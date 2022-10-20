@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    height: 200px;
+    background-color: #0A1D33;
+}
