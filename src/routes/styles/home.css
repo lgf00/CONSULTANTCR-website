@@ -133,6 +133,12 @@
     width: 40%;
 }
 
+@media screen and (max-width: 1000px) {
+    .pill {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 720px) {
     .custom-shape-divider-bottom-1666376713 svg {
         width: calc(264% + 1.3px);

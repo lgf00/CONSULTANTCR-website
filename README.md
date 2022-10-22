@@ -2,13 +2,23 @@
 Website for CONSULTANTCR, LLC
 ### Staging Site
 https://lgf00.github.io/consultantcr-website
+```
+npm run deploy -- -m "message"
+```
 
 ### TODO
-* add content to home
-* add content to about
+~~* add content to home~~
+* relocate pills on home
+* confirm logos (maybe add click/view functionality)
+* add last section (reviews? Small about?)
+~~* add content to about~~
 * add content to what we do
-* add content to contact
-* add proper citations in footer (https://icons8.com/license)
+~~* add content to contact~~
+* make contact page fully functional
+* pretty up contact page
+* confirmation page from contact
+~~* add proper citations in footer (https://icons8.com/license)~~
+* use material icon menu svg (https://fonts.google.com/icons)
 * animate nav
 
 
