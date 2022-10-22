@@ -37,7 +37,7 @@ export default function About() {
         <p>
         In his career as a Regulatory Specialist, he successfully helps many clients converting their legacy INDs into eCTD format. Right now, Mr. Guzman is developing and overseeing the execution of regulatory strategies and regulatory submissions as well as providing regulatory operations support and guidance to various clients.  These submissions include INDs, NDAs, BLA and MAA in eCTD format to the global health agencies.  He has being part of many diverse teams that successfully filed multiple INDs and life cycle submissions ({'>'}3000) with Oncology and other Divisions at FDA and NONE have been received a clinical hold response or RTF letters from the agencies.  He has successfully worked with many departments (non clinical, clinical, quality, PV, CMC and oncology) to coordinate the development of projects and to schedule follow up submissions.  He has participated in pIND meetings with the FDA and has extensive knowledge in Extedo eCTDmanager Suite, Liquent Insight for Publishing™, Lorenz docuBridge. eCTD express publishing tools and ISI templates and has experience with Lorenz authorBridge, docuBridge, and eValidator, ISItoolbox Pharma edition, Adobe Acrobat software.  Experience with different EDMS software and managed, assisted and participated in compliance activities including SOP creation/revision, regulatory departmental training exercises and weekly Project Management meetings.
         </p>
-        <Link to="/contact">
+        <Link to="/consultantcr-website/contact">
           <button>
             Get In Touch
             <span className="material-symbols-outlined">
