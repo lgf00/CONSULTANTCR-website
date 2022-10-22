@@ -101,7 +101,7 @@ export default function Home() {
       </div>
       <div className='welcome-info'>
         <p className='content'>Cambridge based Regulatory Affairs Specialist helping pharmaceutical companies worldwide to gain approval for their medicines in a timely and cost-effective manner.</p>
-        <Link to='/contact'>
+        <Link to='contact'>
           <button>
             Work With Us
             <span className='material-symbols-outlined'>
