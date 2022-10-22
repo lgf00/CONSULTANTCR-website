@@ -1,5 +1,7 @@
 # CONSULTANTCR-website
 Website for CONSULTANTCR, LLC
+### Staging Site
+https://lgf00.github.io/consultantcr-website
 
 ### TODO
 * add content to home

@@ -12,7 +12,7 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/consultantcr-website/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="what-we-do" element={<WWD />} />
           <Route path="about" element={<About />} />
@@ -32,7 +32,7 @@ function Layout() {
             <Outlet/>
           </div>
           <footer>
-            <img src="/logo-sm.png" alt="logo" width="82px"/>
+            <img src="img/logo-sm.png" alt="logo" width="82px"/>
             <div className="footer-info">
               <p>E:aguzman@consultantcr.com</p>
               <p>M: (617) 949-0786</p>

@@ -1,0 +1,158 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero img {
+    margin: 100px 5vw 150px 5vw;
+    min-width: 27vw;
+}
+
+.pill {
+    position: absolute;
+}
+
+.spin {
+    animation: spin 1s ease-in-out forwards;
+}
+
+@keyframes spin {
+    100% {transform: rotate(900deg)}
+}
+
+.pill .l {
+    width: 50px;
+    height: 100px;
+}
+
+.pill .m {
+    width: 30px;
+    height: 70px;
+}
+
+.pill .s {
+    width: 20px;
+    height: 60px;
+}
+
+.pill .top {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.pill .bottom {
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.custom-shape-divider-top-1666375630 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1666375630 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-top-1666375630 .shape-fill {
+    fill: #FAF9F6;
+}
+
+.custom-shape-divider-bottom-1666376713 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1666376713 svg {
+    position: relative;
+    display: block;
+    width: calc(164% + 1.3px);
+    height: 130px;
+}
+
+.custom-shape-divider-bottom-1666376713 .shape-fill {
+    fill: #FAF9F6;
+}
+
+.welcome-info {
+    background-color: #0A1D33;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    color: #FAF9F6;
+    position: relative;
+}
+
+.welcome-info p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.welcome-info button {
+    border-color: #0A1D33;
+}
+
+.companies {
+    position: relative;
+    background-color: #FAF9F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.companies h1 {
+    font-weight: 400;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    flex-wrap: 1;
+    width: 40%;
+}
+
+@media screen and (max-width: 720px) {
+    .custom-shape-divider-bottom-1666376713 svg {
+        width: calc(264% + 1.3px);
+        height: 90px;
+    }
+
+    .custom-shape-divider-top-1666375630 svg {
+        width: calc(200% + 1.3px);
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .custom-shape-divider-bottom-1666376713 svg {
+        width: calc(364% + 1.3px);
+        height: 60px;
+    }
+
+    .custom-shape-divider-top-1666375630 svg {
+        width: calc(300% + 1.3px);
+        height: 50px;
+    }
+}

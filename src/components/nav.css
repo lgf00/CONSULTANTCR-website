@@ -2,7 +2,7 @@ nav {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 20px 15vw 20px 15vw;
+    padding: 12px 20vw;
     font-size: 20px;
 }
 
@@ -28,7 +28,7 @@ li a {
     cursor: pointer;
     position: absolute;
     border: none;
-    background-color: #FAF9F6;
+    background-color: transparent;
     top: 50%;
     right: 25px;
     transform: translateY(-50%);
@@ -41,13 +41,12 @@ li a {
 
 @media screen and (max-width: 720px) {
     nav {
-        margin: 10px 5vw;
+        padding: 10px 5vw;
     }
 }
 
 @media screen and (max-width: 630px) {
     nav {
-        margin: 10px 0;
         padding: 0rem 1.5rem;
     }
 
