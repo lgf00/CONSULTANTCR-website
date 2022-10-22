@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Pill from '../components/Pill'
 import './styles/home.css';
+import logo from '../images/logo.png'
+import mersana from '../images/mersana.png'
+import novartis from '../images/novartis.png'
+import papivax from '../images/papivax.png'
+import rhythm from '../images/rhythm.png'
+import takeda from '../images/takeda.png'
 
 export default function Home() {
   return (
@@ -91,7 +97,7 @@ export default function Home() {
               <div className='bottom' style={{backgroundColor: '#791233'}}/>
           </div>
         </Pill>
-        <img src='/logo.png' alt='full logo'></img>
+        <img src={logo} alt='full logo'></img>
       </div>
       <div className='welcome-info'>
         <p className='content'>Cambridge based Regulatory Affairs Specialist helping pharmaceutical companies worldwide to gain approval for their medicines in a timely and cost-effective manner.</p>
@@ -121,11 +127,11 @@ export default function Home() {
       <div className='companies content'>
         <h1>Who We Work With</h1>
         <div className='logos'>
-          <img className='logo' src='img/takeda.png' alt='takeda'/>
-          <img className='logo' src='img/mersana.png' alt='takeda'/>
-          <img className='logo' src='img/novartis.png' alt='takeda'/>
-          <img className='logo' src='img/papivax.png' alt='takeda'/>
-          <img className='logo' src='img/rhythm.png' alt='takeda'/>
+          <img className='logo' src={takeda} alt='takeda'/>
+          <img className='logo' src={mersana} alt='mersana'/>
+          <img className='logo' src={novartis} alt='novartis'/>
+          <img className='logo' src={papivax} alt='papivax'/>
+          <img className='logo' src={rhythm} alt='rhtyhm'/>
         </div>
       </div>
     </div>   

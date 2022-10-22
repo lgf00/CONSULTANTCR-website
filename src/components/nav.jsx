@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import './nav.css'
+import logosm from '../images/logo-sm.png'
 
 export default function Nav() {
     const [expanded, setExpanded] = useState(false)
@@ -14,7 +15,7 @@ export default function Nav() {
     return (
         <nav>
             <Link to={'/consultantcr-website/'}>
-                <img src="img/logo-sm.png" alt="logo" width="82px"/>
+                <img src={logosm} alt="logo" width="82px"/>
             </Link>
             <div
                 className="hamburger"

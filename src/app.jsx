@@ -7,6 +7,7 @@ import About from './routes/about';
 import Contact from './routes/contact';
 import ErrorPage from './routes/error-page';
 import Nav from './components/nav';
+import logosm from './images/logo-sm.png'
 
 export default function App() {
   return (
@@ -32,7 +33,7 @@ function Layout() {
             <Outlet/>
           </div>
           <footer>
-            <img src="img/logo-sm.png" alt="logo" width="82px"/>
+            <img src={logosm} alt="logo" width="82px"/>
             <div className="footer-info">
               <p>E:aguzman@consultantcr.com</p>
               <p>M: (617) 949-0786</p>

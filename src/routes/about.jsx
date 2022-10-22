@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/about.css'
+import avatar from '../images/avatar.jpg'
 
 export default function About() {
   return (
@@ -20,7 +21,7 @@ export default function About() {
           <p>aguzman@consultantcr</p>
           <p><a href="https://www.linkedin.com/in/alonsoguzman/" target={"_blank"} rel="noreferrer">LinkedIn</a></p>
         </div>
-        <img src="/avatar.jpg" alt="profile"/>
+        <img src={avatar} alt="profile"/>
         <div class="custom-shape-divider-bottom-1666377087">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -34,7 +35,7 @@ export default function About() {
         Alonso Guzman is a Regulatory Affairs Specialist with more than 9 years of experience.  Mr. Guzman has extensive experience helping pharmaceutical companies worldwide to gain approval for their medicines in a timely and cost-effective manner with excellent organization and communication skills. Currently, he provides support to many clients with regulatory strategy, document preparation, archiving, quality assurance and document publishing for Regulatory submissions for ODDs, pINDs, INDs, pNDAs, NDAs, ANDAs, BLAs and MAAs and their respective lifecycle submissions in both electronic (eCTD) and hard-copy submission (CTD) to the Global health Agencies authorities. 
         </p>
         <p>
-        In his career as a Regulatory Specialist, he successfully helps many clients converting their legacy INDs into eCTD format. Right now, Mr. Guzman is developing and overseeing the execution of regulatory strategies and regulatory submissions as well as providing regulatory operations support and guidance to various clients.  These submissions include INDs, NDAs, BLA and MAA in eCTD format to the global health agencies.  He has being part of many diverse teams that successfully filed multiple INDs and life cycle submissions (>3000) with Oncology and other Divisions at FDA and NONE have been received a clinical hold response or RTF letters from the agencies.  He has successfully worked with many departments (non clinical, clinical, quality, PV, CMC and oncology) to coordinate the development of projects and to schedule follow up submissions.  He has participated in pIND meetings with the FDA and has extensive knowledge in Extedo eCTDmanager Suite, Liquent Insight for Publishing™, Lorenz docuBridge. eCTD express publishing tools and ISI templates and has experience with Lorenz authorBridge, docuBridge, and eValidator, ISItoolbox Pharma edition, Adobe Acrobat software.  Experience with different EDMS software and managed, assisted and participated in compliance activities including SOP creation/revision, regulatory departmental training exercises and weekly Project Management meetings.
+        In his career as a Regulatory Specialist, he successfully helps many clients converting their legacy INDs into eCTD format. Right now, Mr. Guzman is developing and overseeing the execution of regulatory strategies and regulatory submissions as well as providing regulatory operations support and guidance to various clients.  These submissions include INDs, NDAs, BLA and MAA in eCTD format to the global health agencies.  He has being part of many diverse teams that successfully filed multiple INDs and life cycle submissions ({'>'}3000) with Oncology and other Divisions at FDA and NONE have been received a clinical hold response or RTF letters from the agencies.  He has successfully worked with many departments (non clinical, clinical, quality, PV, CMC and oncology) to coordinate the development of projects and to schedule follow up submissions.  He has participated in pIND meetings with the FDA and has extensive knowledge in Extedo eCTDmanager Suite, Liquent Insight for Publishing™, Lorenz docuBridge. eCTD express publishing tools and ISI templates and has experience with Lorenz authorBridge, docuBridge, and eValidator, ISItoolbox Pharma edition, Adobe Acrobat software.  Experience with different EDMS software and managed, assisted and participated in compliance activities including SOP creation/revision, regulatory departmental training exercises and weekly Project Management meetings.
         </p>
         <Link to="/contact">
           <button>
