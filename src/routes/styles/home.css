@@ -116,7 +116,7 @@
     align-items: center;
 }
 
-.companies h1 {
+h1 {
     font-weight: 400;
 }
 
@@ -133,13 +133,65 @@
     height: 20%;
 }
 
-@media screen and (max-width: 1000px) {
-    .pill {
-        display: none;
-    }
+.reviewsec {
+    background-color: #791233;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #FAF9F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media screen and (max-width: 720px) {
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review {
+    display: flex;
+    gap: 20px;
+}
+
+.review img {
+    border-radius: 50%;
+    width: 160px;
+}
+
+.review h3 {
+    margin: 0;
+}
+
+.review h4 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.custom-shape-divider-top-1666499501 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1666499501 svg {
+    position: relative;
+    display: block;
+    width: calc(185% + 1.3px);
+    height: 63px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1666499501 .shape-fill {
+    fill: #FAF9F6;
+}
+
+
+@media screen and (max-width: 1000px) {
     .custom-shape-divider-bottom-1666376713 svg {
         width: calc(264% + 1.3px);
         height: 90px;
@@ -148,6 +200,28 @@
     .custom-shape-divider-top-1666375630 svg {
         width: calc(200% + 1.3px);
         height: 80px;
+    }
+
+    .custom-shape-divider-top-1666499501 svg {
+        width: calc(285% + 1.3px);
+        height: 53px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .logos {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 50%;
+        margin: 5px;
+    }
+
+    .review {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -160,5 +234,10 @@
     .custom-shape-divider-top-1666375630 svg {
         width: calc(300% + 1.3px);
         height: 50px;
+    }
+
+    .custom-shape-divider-top-1666499501 svg {
+        width: calc(385% + 1.3px);
+        height: 53px;
     }
 }
