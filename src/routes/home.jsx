@@ -1,19 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Pill from '../components/Pill'
+// import Pill from '../components/Pill'
 import './styles/home.css';
 import logo from '../images/logo.png'
 import mersana from '../images/mersana.png'
-import novartis from '../images/novartis.png'
+import aobiome from '../images/aobiome.png'
 import papivax from '../images/papivax.png'
 import rhythm from '../images/rhythm.png'
 import takeda from '../images/takeda.png'
+import hillhurst from '../images/hillhurst.png'
+import tanvex from '../images/tanvex.png'
+import wmackin from '../images/wmackin.png'
 
 export default function Home() {
   return (
     <div className='home-content'>
       <div className='hero'>
-        <Pill rotation={192} top='15%' left='28vw'>
+        {/* <Pill rotation={192} top='15%' left='28vw'>
           <div className='s'>
             <div className='top' style={{backgroundColor: '#791233'}}/>
             <div className='bottom' style={{backgroundColor: '#748EC7'}}/>
@@ -96,7 +99,7 @@ export default function Home() {
               <div className='top' style={{backgroundColor: '#748EC7'}}/>
               <div className='bottom' style={{backgroundColor: '#791233'}}/>
           </div>
-        </Pill>
+        </Pill> */}
         <img src={logo} alt='full logo'></img>
       </div>
       <div className='welcome-info'>
@@ -125,11 +128,14 @@ export default function Home() {
         </div>
       </div>
       <div className='companies content'>
-        <h1>Who We Work With</h1>
+        <h1>Current Customers</h1>
         <div className='logos'>
+          <img className='logo' src={aobiome} alt='aobiome'/>
           <img className='logo' src={takeda} alt='takeda'/>
+          <img className='logo' src={hillhurst} alt='hillhurst'/>
           <img className='logo' src={mersana} alt='mersana'/>
-          <img className='logo' src={novartis} alt='novartis'/>
+          <img className='logo' src={wmackin} alt='wmackin'/>
+          <img className='logo' src={tanvex} alt='tanvex'/>
           <img className='logo' src={papivax} alt='papivax'/>
           <img className='logo' src={rhythm} alt='rhtyhm'/>
         </div>

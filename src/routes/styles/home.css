@@ -123,14 +123,14 @@
 .logos {
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .logo {
-    flex-wrap: 1;
-    width: 40%;
+    width: 20%;
+    height: 20%;
 }
 
 @media screen and (max-width: 1000px) {
