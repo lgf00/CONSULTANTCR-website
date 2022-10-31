@@ -7,18 +7,18 @@ nav {
     z-index: 99999;
 }
 
-ul {
+nav ul {
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-li {
+nav li {
     list-style-type: none;
     margin: 0 1rem;
 }
 
-li a {
+nav li a {
     text-decoration: none;
     display: block;
     color: inherit;
@@ -55,7 +55,7 @@ li a {
         display: block;
     }
 
-    ul {
+    nav ul {
         flex-direction: column;
         position: absolute;
         top: 82px;
@@ -66,22 +66,22 @@ li a {
         display: none;
     }
 
-    li {
+    nav li {
         text-align: center;
         margin: 0;
     }
 
-    li a {
+    nav li a {
         color: black;
         width: 100%;
         padding: 1.5rem 0;
     }
 
-    li:hover {
+    nav li:hover {
         background-color: #eee;
     }
 
-    .expanded ul {
+    nav .expanded ul {
         display: block;
     }
 }

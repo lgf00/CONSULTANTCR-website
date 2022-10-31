@@ -23,8 +23,9 @@ export default function Contact() {
 
   return (
     <>
-    <div className="content">
-      {sent ? <Sent/> : <div className='contact-content'>
+      {sent ? <Sent/> : 
+      <div className="content">
+        <div className='contact-content'>
         <h1><span style={{color: "#0A1D33"}}>Get In</span> <span style={{color: "#791233"}}>Touch</span></h1>
         <h4>Ready to expedite your development journey? Have any questions on what we can do for you? Reach out! Let's get to know one another.</h4>
         <form ref={form} onSubmit={sendEmail} className="contact-form">
@@ -61,17 +62,17 @@ export default function Contact() {
             <textarea type="text" name='hear' />
           </label>
           <div className="sub">
-            <button type="submit">Send</button>
             {sending ? 
             <div className="loading">
               <div className="top"/>
               <div className="bottom"/>
             </div>
-            : ''}
+            : <button type="submit">Send</button>}
           </div>
         </form>
-      </div>}
-    </div>
+      </div>
+      </div>
+      }
     </>
   )
 }

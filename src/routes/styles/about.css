@@ -3,10 +3,11 @@
     width: 100%;
     background-color: #791233;
     color: #FAF9F6;
-    padding: 25px 0;
+    padding: 50px 0;
     display: flex;
     justify-content: space-between;
     position: relative;
+    min-height: 300px;
 }
 
 .banner img {
@@ -101,6 +102,7 @@
     }
 
     .banner img {
+        width: 60vw;
         margin: auto auto 30px auto;
     }
 

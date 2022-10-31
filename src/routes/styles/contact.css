@@ -84,10 +84,11 @@
 }
 
 .loading {
-    width: 50px;
+    width: 40px;
     height: 100px;
-    animation: spin 0.5s infinite linear;
+    animation: spin 0.7s infinite linear;
     animation-iteration-count: infinite;
+    margin: 10px 0;
 }
 
 .loading .top {
