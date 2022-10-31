@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/consultantcr-website/static/css/main.6d00381d.css",
-    "main.js": "/consultantcr-website/static/js/main.65f2924e.js",
+    "main.css": "/consultantcr-website/static/css/main.269f542c.css",
+    "main.js": "/consultantcr-website/static/js/main.ced5879a.js",
     "static/js/787.5b000cd7.chunk.js": "/consultantcr-website/static/js/787.5b000cd7.chunk.js",
     "static/media/avatar.jpg": "/consultantcr-website/static/media/avatar.b8fedab3da95a2d28673.jpg",
     "static/media/takeda.png": "/consultantcr-website/static/media/takeda.d59d41ce6fa7cb7f2980.png",
@@ -13,12 +13,12 @@
     "static/media/kelsey.jpg": "/consultantcr-website/static/media/kelsey.5eb1172a9bc4d7729432.jpg",
     "static/media/papivax.png": "/consultantcr-website/static/media/papivax.8aba99b2c69da6d10971.png",
     "index.html": "/consultantcr-website/index.html",
-    "main.6d00381d.css.map": "/consultantcr-website/static/css/main.6d00381d.css.map",
-    "main.65f2924e.js.map": "/consultantcr-website/static/js/main.65f2924e.js.map",
+    "main.269f542c.css.map": "/consultantcr-website/static/css/main.269f542c.css.map",
+    "main.ced5879a.js.map": "/consultantcr-website/static/js/main.ced5879a.js.map",
     "787.5b000cd7.chunk.js.map": "/consultantcr-website/static/js/787.5b000cd7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d00381d.css",
-    "static/js/main.65f2924e.js"
+    "static/css/main.269f542c.css",
+    "static/js/main.ced5879a.js"
   ]
 }
