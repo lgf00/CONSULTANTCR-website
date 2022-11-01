@@ -5,51 +5,60 @@ export default function WWD() {
   return (
     <div className='content'>
       <div className='section' id='regulatory-experience'>
-        <h1><span style={{color: "#0A1D33"}}>Regulatory</span> <span style={{color: "#791233"}}>Experience</span></h1>
+        <h1>
+          <span style={{color: "#0A1D33"}}>Regulatory</span> <span style={{color: "#791233"}}>Experience and Expertise</span> 
+        </h1>
         <ul>
           <li>
-            Regulatory Dossier Compilation, Publishing and Dispatch
+            More than 15 Years of Professional Working Experience in Regulatory Operations and Regulatory Affairs
           </li>
           <li>
-            Submission Management
+            Extensive Experience in Management of Dossier for Investigational and Marketed products
           </li>
           <li>
-            Veeva RIM Administration
+            Expert Knowledge and Experience in Regulatory Submission Management and Dossier Compilation, Validation, Publishing and Dispatch
           </li>
           <li>
-            Agent Service
+            Profound Knowledge of Regulatory Requirements and Procedures in the US and ROW throughout the Products Life Cycle
           </li>
           <li>
-            Regulatory Operations Strategy Services
+            Profound Knowledge of regulatory information management, including technical requirements and systems used in regulatory operations, such as document management systems
           </li>
           <li>
-            Project Management
+            Federal Food and Drug Agency Agent (US Agent)
           </li>
           <li>
-            Submission Document Preperation
+            Experience in Regulatory Operations Strategy Services
           </li>
           <li>
-            Global Publishing
-          </li> 
-        </ul>
-      </div>
-      <div className='section' id='areas-of-expertise'>
-        <h1><span style={{color: "#791233"}}>Areas</span> <span style={{color: "#0A1D33"}}>of Expertise</span></h1>
-        <ul>
-          <li>
-            US and EU IND/CTA, NDA (eCTD), Annual Report and Orphan Drug document Submission Publish.
+            Strong Project Management Skills with Regulatory Projects
           </li>
           <li>
-            Experienced with direct interactions with FDA and EMEA and other global regulatory agencies in support of global drug development programs.
+            Expeditious Submission Document Preparation
           </li>
           <li>
-            CTD Format Publishing Expert.
+            Strong Familiarity with Metadata Management and Associated Processes
           </li>
           <li>
-            QA and QC review of Regulatory and Scientific documents.
+            Strong Understanding of Relational Data Structures, Principles, and Practices
           </li>
           <li>
-            Regulatory Services and Liaison with FDA and Sponsor.
+            Working Knowledge of Pharmaceutical Industry-Related Laws, Regulations and Submission Guidance
+          </li>
+          <li>
+            Experience Implementing Enterprise Data Management Processes, Procedures, and Decision Support
+          </li>
+          <li>
+            Working Knowledge of Pharmaceutical Organizations, Including Interrelationships of Functional Areas
+          </li>
+          <li>
+            Expert Knowledge of ICH guidelines
+          </li>
+          <li>
+            Expert Knowledge of deploying Document Management Systems
+          </li>
+          <li>
+            Expert RIM systems (Veeva Vault) Administration
           </li>
         </ul>
       </div>
@@ -57,34 +66,28 @@ export default function WWD() {
         <h1><span style={{color: "#0A1D33"}}>eCTD</span> <span style={{color: "#791233"}}>Publishing</span> <span style={{color: "#0A1D33"}}>Support</span></h1>
         <ul>
           <li>
-            Regulatory publishing expertise
+            Regulatory Publishing Expertise
           </li>
           <li>
-            Regulatory publishing submission management
+            Regulatory Publishing Submission Management
           </li>
           <li>
-            Submission-level publishing in CTD/eCTD formats
+            Submission-level Publishing in CTD/eCTD Formats
           </li>
           <li>
-            Publishing of regulatory documents: clinical, non-clinical, and CMC
+            Publishing of Regulatory Documents: Clinical, Non-clinical, and CMC
           </li>
           <li>
-            Preparation of compliant individual dossier sections for electronic or paper-based submission
+            Preparation of Complient Applications and Life Cycle Dossier for Investigational and Marketed Products
           </li>
           <li>
-            Preparation of compliant electronic and paper submissions: IND, IMPD, CTA, NDA, ANDA, 505(b)(2), MAA, NDS, DMF, CSR, Annual Reports, Orphan Drug Applications, Amendments, and Supplements
+            Conversion of Legacy Documents for eCTD
           </li>
           <li>
-            Conversion of legacy documents for eCTD
+            Document Formatting and Stylistics
           </li>
           <li>
-            Document formatting and stylistics
-          </li>
-          <li>
-            Document scanning and the restitution of scanned documents
-          </li>
-          <li>
-            Document submission to FDA, EMEA and successful management of Regulatory review processes.
+            Document Submission to FDA, EMEA and Successful Management of Regulatory Review Processes.
           </li>
         </ul>
       </div>
