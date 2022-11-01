@@ -31,18 +31,18 @@ export default function Contact() {
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="small">
             <label>
-              First name
-              <input type="text" name='firstname' />
+              First name*
+              <input type="text" name='firstname' required/>
             </label>
             <label>
-              Last Name
-              <input type="text" name='lastname' />
+              Last Name*
+              <input type="text" name='lastname' required/>
             </label>
           </div>
           <div className="small">
             <label>
-              Email
-              <input type="email" name='email' />
+              Email*
+              <input type="email" name='email' required/>
             </label>
             <label>
               Phone
@@ -50,12 +50,12 @@ export default function Contact() {
             </label>
           </div>
           <label className="med">
-            Company
-            <input type="text" name='comp' />
+            Company*
+            <input type="text" name='comp' required/>
           </label>
           <label className="large">
-            How Can We Help?
-            <textarea type="text" name='help' />
+            How Can We Help?*
+            <textarea type="text" name='help' required/>
           </label>
           <label className="large">
             How Did You Hear About Us?
