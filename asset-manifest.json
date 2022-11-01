@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/consultantcr-website/static/css/main.3690997e.css",
-    "main.js": "/consultantcr-website/static/js/main.11e9c9ff.js",
+    "main.js": "/consultantcr-website/static/js/main.8d8507b5.js",
     "static/js/787.5b000cd7.chunk.js": "/consultantcr-website/static/js/787.5b000cd7.chunk.js",
     "static/media/avatar.jpg": "/consultantcr-website/static/media/avatar.b8fedab3da95a2d28673.jpg",
     "static/media/takeda.png": "/consultantcr-website/static/media/takeda.d59d41ce6fa7cb7f2980.png",
@@ -14,11 +14,11 @@
     "static/media/papivax.png": "/consultantcr-website/static/media/papivax.8aba99b2c69da6d10971.png",
     "index.html": "/consultantcr-website/index.html",
     "main.3690997e.css.map": "/consultantcr-website/static/css/main.3690997e.css.map",
-    "main.11e9c9ff.js.map": "/consultantcr-website/static/js/main.11e9c9ff.js.map",
+    "main.8d8507b5.js.map": "/consultantcr-website/static/js/main.8d8507b5.js.map",
     "787.5b000cd7.chunk.js.map": "/consultantcr-website/static/js/787.5b000cd7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3690997e.css",
-    "static/js/main.11e9c9ff.js"
+    "static/js/main.8d8507b5.js"
   ]
 }
