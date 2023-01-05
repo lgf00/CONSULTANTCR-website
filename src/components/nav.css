@@ -24,6 +24,10 @@ nav li a {
     color: inherit;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 .hamburger {
     padding: 1.5rem;
     cursor: pointer;

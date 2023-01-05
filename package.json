@@ -1,7 +1,7 @@
 {
   "name": "consultantcr-website",
   "version": "0.1.0",
-  "homepage": "https://lgf00.github.io/consultantcr-website",
+  "homepage": "https://consultantcr.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",

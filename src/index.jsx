@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, Outlet, ScrollRestoration } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, Outlet, ScrollRestoration, useRouteError } from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './routes/home';
@@ -13,15 +13,20 @@ import logosm from './images/logo-sm.png'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/consultantcr-website/" element={<Layout />}>
+    <Route path="/" element={<Layout />} errorElement={<ErrorBoundary/>}>
         <Route index element={<Home />} />
-        <Route path="what-we-do" element={<WWD />} />
+        <Route path="regulatory-support" element={<WWD />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<ErrorPage />} />
     </Route>
   )
 )
+
+function ErrorBoundary() {
+  let error = useRouteError();
+  console.error(error);
+  return <ErrorPage error={error}/>;
+}
 
 function Layout() {
   return (
@@ -31,11 +36,17 @@ function Layout() {
           <Outlet/>
         </div>
         <footer>
-          <img src={logosm} alt="logo" width="82px"/>
-          <div className="footer-info">
-            <p>E:aguzman@consultantcr.com</p>
-            <p>M: (617) 949-0786</p>
-            <p>Cambridge MA, 02139</p>
+          <div className="footer-logo">
+            <img src={logosm} alt="CONSULTANTCR, LLC" width="82px"/>
+            <div className="footer-info">
+              <p>aguzman@consultantcr.com</p>
+              <p>(617) 669-3566</p>
+              <p>Cambridge MA, 02139</p>
+            </div>
+          </div>
+          <div className="footer-info right">
+            <p>CONSULTANTCR, LLC</p>
+            <p>Minority owned and operated business</p>
           </div>
         </footer>
         <ScrollRestoration/>

@@ -1,17 +1,33 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './styles/wwd.css'
 
 export default function WWD() {
   return (
     <div className='content'>
+      <div className='section'>
+        <h1><span style={{color: "#0A1D33"}}>CONSULTANT</span><span style={{color: "#748EC7"}}>CR</span><span style={{color: "#0A1D33"}}>, LLC</span></h1>
+        <p>
+          With more than 15 Years of professional working experience in regulatory operations and regulatory affairs we are proud to be able to help our clients to the fullest ability.
+          Listed below are areas we have helped our clients with for countless years. From regulatory operations to eCTD publishing support, we got your covered.
+        </p>
+        <p>
+          Have questions specific to what CONSULTANTCR can do for you?
+        </p>
+        <Link to="/contact">
+          <button className='wwd-button'>
+            Reach Out
+            <span className='material-symbols-outlined'>
+              arrow_forward
+            </span>
+          </button>
+        </Link>
+      </div>
       <div className='section' id='regulatory-experience'>
-        <h1>
+        <h2>
           <span style={{color: "#0A1D33"}}>Regulatory</span> <span style={{color: "#791233"}}>Experience and Expertise</span> 
-        </h1>
+        </h2>
         <ul>
-          <li>
-            More than 15 Years of Professional Working Experience in Regulatory Operations and Regulatory Affairs
-          </li>
           <li>
             Extensive Experience in Management of Dossier for Investigational and Marketed products
           </li>
@@ -63,7 +79,7 @@ export default function WWD() {
         </ul>
       </div>
       <div className='section' id='ectd-publishing'>
-        <h1><span style={{color: "#0A1D33"}}>eCTD</span> <span style={{color: "#791233"}}>Publishing</span> <span style={{color: "#0A1D33"}}>Support</span></h1>
+        <h2><span style={{color: "#0A1D33"}}>eCTD</span> <span style={{color: "#791233"}}>Publishing</span> <span style={{color: "#0A1D33"}}>Support</span></h2>
         <ul>
           <li>
             Regulatory Publishing Expertise

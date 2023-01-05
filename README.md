@@ -1,10 +1,5 @@
 # CONSULTANTCR-website
 Website for CONSULTANTCR, LLC
-### Staging Site
-https://lgf00.github.io/consultantcr-website
-```
-npm run deploy -m "message"
-```
 
 ### TODO
 * ~~add content to home~~
