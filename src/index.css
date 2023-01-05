@@ -10,13 +10,17 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  font-size: clamp(1rem, 0.7598rem + 0.9855vw, 3.125rem);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .content {
-  margin: 0 20vw;
+  margin: 0 20vw 6vh 20vw;
 }
 
 footer {
@@ -64,9 +68,8 @@ button {
   border-radius: 66px;
   padding: 10px 40px;
   color: #FAF9F6;
-  font-size: 20px;
   margin: auto;
-  font-size: 20px;
+  font-size: clamp(1.25rem, 1.1087rem + 0.5797vw, 2.5rem);
   display: flex;
   align-items: center;
   margin: 40px auto;
@@ -88,8 +91,43 @@ a {
   color: inherit;
 }
 
+.footer-waves {
+  position: absolute;
+  margin-top: -33px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.footer-waves svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 35px;
+  transform: rotateY(180deg);
+}
+
+.footer-waves .shape-fill {
+  fill: #0A1D33;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-waves svg {
+      width: calc(200% + 1.3px);
+
+  }
+}
+
 @media screen and (max-width: 720px) {
   .content {
       margin: 20px 5vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-waves svg {
+      width: calc(300% + 1.3px);
   }
 }

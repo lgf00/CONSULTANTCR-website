@@ -1,20 +1,23 @@
 # CONSULTANTCR-website
 Website for CONSULTANTCR, LLC
 
-### TODO
+## TODO
 * ~~add content to home~~
-* relocate pills on home
-* confirm logos (maybe add click/view functionality)
-* add last section (reviews? Small about?)
+* ~~relocate pills on home~~
+* ~~confirm logos~~ 
+* ~~add last section (reviews? Small about?)~~
 * ~~add content to about~~
-* add content to what we do
+* ~~add content to what we do~~
 * ~~add content to contact~~
-* make contact page fully functional
-* pretty up contact page
-* confirmation page from contact
+* ~~make contact page fully functional~~
+* ~~pretty up contact page~~
+* ~~confirmation page from contact~~
 * ~~add proper citations in footer (https://icons8.com/license)~~
+* add click/view functionality to logos
+* add number stats
+* FIX LINE
 * use material icon menu svg (https://fonts.google.com/icons)
-* animate nav
+* animate nav (animations)
 
 
 ## REACT

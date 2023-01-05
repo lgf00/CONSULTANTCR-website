@@ -24,16 +24,19 @@
 }
 
 .banner-text h1 {
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: clamp(3rem, 2.7739rem + 0.9275vw, 5rem);
 }
 
 .banner-text h3 {
-    font-size: 36px;
+    /* font-size: 36px; */
+    font-size: clamp(2.625rem, 2.4272rem + 0.8406vw, 4.0625rem);
     margin-bottom: 20px;
 }
 
 .banner-text p {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: clamp(1.25rem, 1.144rem + 0.4348vw, 2.1875rem);
 }
 
 .banner-text p span {
@@ -64,7 +67,7 @@
 
 .custom-shape-divider-top-1666377012 {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -85,7 +88,7 @@
 
 .custom-shape-divider-bottom-1666377087 {
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 100%;
     overflow: hidden;

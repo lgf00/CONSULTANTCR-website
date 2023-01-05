@@ -1,17 +1,45 @@
 .hero {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 2vw;
     min-height: 200px;
 }
 
-.hero img {
+.counter {
+    font-size: clamp(2.5rem, 2.2527rem + 1.0145vw, 4.6875rem);
+    width: 330px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.counter.cont {
+    background: linear-gradient(to right, #748EC7 0%, #0A1D33 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.counter.sub {
+    background: linear-gradient(to right, #791233 0%, #0A1D33 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.counter p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.hero-logo {
     margin: 25px 5vw 100px 5vw;
     min-width: 27vw;
 }
 
 .custom-shape-divider-top-1666375630 {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -31,7 +59,7 @@
 
 .custom-shape-divider-bottom-1666376713 {
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -59,7 +87,8 @@
 }
 
 .welcome-info p {
-    font-size: 24px;
+    font-size: clamp(1.125rem, 0.9696rem + 0.6377vw, 2.5rem);
+    margin-bottom: 0;
     text-align: center;
 }
 
@@ -77,7 +106,23 @@
 
 h1 {
     font-weight: 400;
+    font-size: clamp(1.5rem, 1.3163rem + 0.7536vw, 3.125rem);
 }
+
+.companies h1 {
+    background: linear-gradient(to right, #0A1D33 0%, #791233 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.reviews h1 {
+    background: linear-gradient(to right, #FAF9F6 0%, #748EC7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .logos {
     display: flex;
@@ -113,12 +158,17 @@ h1 {
     gap: 50px;
 }
 
+.reviews h1 {
+    text-align: center;
+}
+
 .review {
     display: flex;
     gap: 20px;
     background-color: #FAF9F6;
     padding: 20px;
     border-radius: 16px;
+    width: 50vw;
     color: black;
     box-shadow: 14px 14px 0px 1px rgb(250, 249, 246, 0.25);
 }
@@ -134,6 +184,7 @@ h1 {
 
 .review p {
     font-weight: 500;
+    font-size: clamp(1rem, 0.9011rem + 0.4058vw, 1.875rem);
 }
 
 .review h4 {
@@ -149,7 +200,7 @@ h1 {
 
 .custom-shape-divider-top-1666499501 {
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -166,28 +217,6 @@ h1 {
 
 .custom-shape-divider-top-1666499501 .shape-fill {
     fill: #FAF9F6;
-}
-
-.custom-shape-divider-bottom-1667243333 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1667243333 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 35px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1667243333 .shape-fill {
-    fill: #0A1D33;
 }
 
 
@@ -211,6 +240,25 @@ h1 {
         width: calc(200% + 1.3px);
         height: 25px;
     }
+
+    .sub, .cont {
+        flex: 1 0 100%;
+    }
+
+    .counter {
+        text-align: center;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero-logo {
+        order: -1;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        margin-bottom: 50px
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -227,6 +275,12 @@ h1 {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        width: auto;
+    }
+
+    .hero-logo {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 }
 
@@ -249,5 +303,10 @@ h1 {
     .custom-shape-divider-bottom-1667243333 svg {
         width: calc(300% + 1.3px);
         height: 25px;
+    }
+
+    .welcome-info {
+        padding-top: 50px;
+        padding-bottom: 40px;
     }
 }

@@ -17,14 +17,14 @@
 }
 
 .contact-content h1 {
-    font-size: 96px;
+    font-size: clamp(6rem, 5.6185rem + 1.5652vw, 9.375rem);
     font-weight: 400;
     margin: 0;
     transition: all 1s ease-out forwards;
 }
 
 .contact-content h4 {
-    font-size: 24px;
+    font-size: clamp(1.5rem, 1.281rem + 0.8986vw, 3.4375rem);
     width: 40vw;
     font-weight: 400;
     margin-bottom: 60px;
@@ -42,6 +42,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 12px;
+    font-size: clamp(1rem, 0.9364rem + 0.2609vw, 1.5625rem);
 }
 
 .contact-form input {
