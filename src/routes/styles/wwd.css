@@ -27,3 +27,56 @@
     font-size: clamp(1.125rem, 1.0402rem + 0.3478vw, 1.875rem);
     padding: 7px 20px;
 }
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers .counter {
+    width: 180px;
+}
+
+.RBgrad {
+    background: linear-gradient(to right, #791233 0%, #0A1D33 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.LBgrad {
+    background: linear-gradient(to right, #748EC7 0%, #0A1D33 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.BLgrad {
+    background: linear-gradient(to right, #0A1D33 0%, #748EC7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+
+.LRgrad {
+    background: linear-gradient(to right, #748EC7 0%, #791233 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.RLgrad {
+    background: linear-gradient(to right, #791233 0%, #748EC7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.BRgrad {
+    background: linear-gradient(to right, #0A1D33 0%, #791233 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

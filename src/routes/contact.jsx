@@ -67,7 +67,7 @@ export default function Contact() {
               <div className="top"/>
               <div className="bottom"/>
             </div>
-            : <button type="submit">Send</button>}
+            : <button type="submit" className='blue-white-grad'>Send</button>}
           </div>
         </form>
       </div>

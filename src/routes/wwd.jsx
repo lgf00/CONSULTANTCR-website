@@ -1,12 +1,106 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import CountUp from 'react-countup';
 import './styles/wwd.css'
 
 export default function WWD() {
   return (
     <div className='content'>
       <div className='section'>
-        <h1><span style={{color: "#0A1D33"}}>CONSULTANT</span><span style={{color: "#748EC7"}}>CR</span><span style={{color: "#0A1D33"}}>, LLC</span></h1>
+        <h1><span style={{color: "#0A1D33"}}>What</span><span style={{color: "#748EC7"}}> We </span><span style={{color: "#0A1D33"}}>Do</span></h1>
+        <div className='numbers'>
+          {/* IND, NDA, BLA, MAA, NDS */}
+          <div className='counter RBgrad'>
+            <CountUp
+              className='IND'
+              end={5816}
+              duration={4}
+              useEasing={true}
+              easingFn={(t, b, c, d) => (t===d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b}
+              separator=","
+              suffix="+"
+              >
+              {({ countUpRef }) => (
+                <div>
+                  <span ref={countUpRef} />
+                </div>
+              )}
+            </CountUp>
+            <p>INDs</p>
+          </div>
+          <div className='counter BLgrad'>
+            <CountUp
+              className='NDA'
+              end={2180}
+              duration={4}
+              useEasing={true}
+              easingFn={(t, b, c, d) => (t===d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b}
+              separator=","
+              suffix="+"
+              >
+              {({ countUpRef }) => (
+                <div>
+                  <span ref={countUpRef} />
+                </div>
+              )}
+            </CountUp>
+            <p>NDAs</p>
+          </div>
+          <div className='counter LRgrad'>
+            <CountUp
+              className='BLA'
+              end={1902}
+              duration={4}
+              useEasing={true}
+              easingFn={(t, b, c, d) => (t===d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b}
+              separator=","
+              suffix="+"
+              >
+              {({ countUpRef }) => (
+                <div>
+                  <span ref={countUpRef} />
+                </div>
+              )}
+            </CountUp>
+            <p>BLAs</p>
+          </div>
+          <div className='counter RBgrad'>
+            <CountUp
+              className='MAA'
+              end={873}
+              duration={4}
+              useEasing={true}
+              easingFn={(t, b, c, d) => (t===d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b}
+              separator=","
+              suffix="+"
+              >
+              {({ countUpRef }) => (
+                <div>
+                  <span ref={countUpRef} />
+                </div>
+              )}
+            </CountUp>
+            <p>MAAs</p>
+          </div>
+          <div className='counter BLgrad'>
+            <CountUp
+              className='NDS'
+              end={528}
+              duration={4}
+              useEasing={true}
+              easingFn={(t, b, c, d) => (t===d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b}
+              separator=","
+              suffix="+"
+              >
+              {({ countUpRef }) => (
+                <div>
+                  <span ref={countUpRef} />
+                </div>
+              )}
+            </CountUp>
+            <p>NDSs</p>
+          </div>
+        </div>
         <p>
           With more than 15 Years of professional working experience in regulatory operations and regulatory affairs we are proud to be able to help our clients to the fullest ability.
           Listed below are areas we have helped our clients with for countless years. From regulatory operations to eCTD publishing support, we got your covered.
@@ -15,7 +109,7 @@ export default function WWD() {
           Have questions specific to what CONSULTANTCR can do for you?
         </p>
         <Link to="/contact">
-          <button className='wwd-button'>
+          <button className='wwd-button red-white-grad'>
             Reach Out
             <span className='material-symbols-outlined'>
               arrow_forward
