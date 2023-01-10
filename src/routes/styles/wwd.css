@@ -33,6 +33,11 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    display: none;
+}
+
+#ectd-publishing {
+    margin-bottom: 100px;
 }
 
 .numbers .counter {
