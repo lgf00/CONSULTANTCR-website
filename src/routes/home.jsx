@@ -19,18 +19,16 @@ import wmackin from '../images/wmackin.png'
 import dan from '../images/dan.jpg'
 import sharon from '../images/sharon.jpg'
 import kelsey from '../images/kelsey.jpg'
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 
 export default function Home() {
-
-  useEffect(() => {
-    
-  }, [])
-  
-
   return (
     <div className='home-content'>
+      <Helmet>
+        <title>CONSULTANTCR, LLC</title>
+        <meta name="description" content="Cambridge based Regulatory Affairs Specialist helping pharmaceutical companies worldwide to gain approval for their medicines in a timely and cost-effective manner."/>
+      </Helmet>
       <div className='hero'>
         <div className='counter sub'>
           <CountUp
@@ -96,7 +94,7 @@ export default function Home() {
         </div>
       </div>
       <div className='companies content'>
-        <h1>Current Customers</h1>
+        <h1><span style={{color: "#0A1D33"}}>Current</span><span style={{color: "#791233"}}> Customers</span></h1>
         <div className='logos'>
           <a className='logo' href="https://www.aobiome.com/" target="_blank" rel="noreferrer">
             <img  src={aobiome} alt='aobiome'/>
@@ -127,7 +125,7 @@ export default function Home() {
       <div className='reviewsec'>
         <div className='reviews content'>
           <div className='rev-sec'>
-              <h1>What People Have Said</h1>
+              <h1><span style={{color: "#FAF9F6"}}>What </span><span style={{color: "#0A1D33"}}>People </span><span style={{color: "#FAF9F6"}}>Have Said</span></h1>
               <div className='rev-top-wave'>
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -167,21 +165,21 @@ export default function Home() {
                 <div className='person'>
                   <img src={dan} alt='person' className='person'/>
                 </div>
-                  <h3 className='name'>Dan Linkie</h3>
-                  <h4 className='assoc'>Managing Director at ARRENDEE LLC</h4>
-                  <p className='text'>Alonso has consistently provided the support needed in fulfilling client demands in a professional manner and with the utmost expediency. He is a most dependable colleague.</p>
+                <h3 className='name'>Dan Linkie</h3>
+                <h4 className='assoc'>Managing Director at ARRENDEE LLC</h4>
+                <p className='text'>
+                  Alonso has consistently provided the support needed in fulfilling client demands in a professional manner and with the utmost expediency. He is a most dependable colleague.
+                </p>
             </SwiperSlide>
             <SwiperSlide>
                 <div className='person'>
                   <img src={kelsey} alt='person' className='person'/>
                 </div>
-                <div>
-                  <h3 className='name'>Kelsey LeBlanc</h3>
-                  <h4 className='assoc'>President of McCormick LifeScience Consultants, LLC</h4>
-                  <p className='text'>
-                    Alonso is a true pleasure to work with! His determination, organization, eagerness to learn and ability to provide high quality work to his colleagues/clients is commendable. In addition to his superb work ethic, Alonso's friendliness and humor is a great asset to have in the workplace. I would recommend his services to any company, as they would be lucky to have him as a part of their team!
-                  </p>
-                </div>
+                <h3 className='name'>Kelsey LeBlanc</h3>
+                <h4 className='assoc'>President of McCormick LifeScience Consultants, LLC</h4>
+                <p className='text'>
+                  Alonso is a true pleasure to work with! His determination, organization, eagerness to learn and ability to provide high quality work to his colleagues/clients is commendable. In addition to his superb work ethic, Alonso's friendliness and humor is a great asset to have in the workplace. I would recommend his services to any company, as they would be lucky to have him as a part of their team!
+                </p>
             </SwiperSlide>
           </Swiper>
           <div className='rev-sec'>

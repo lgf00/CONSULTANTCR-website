@@ -133,21 +133,6 @@ h1 {
     font-size: clamp(1.5rem, 1.3163rem + 0.7536vw, 3.125rem);
 }
 
-.companies h1 {
-    background: linear-gradient(to right, #0A1D33 0%, #791233 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.reviews h1 {
-    background: linear-gradient(to right, #FAF9F6 0%, #748EC7 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
 .logos {
     display: flex;
     justify-content: center;
@@ -176,11 +161,31 @@ h1 {
 
 .swiper {
     width: 100vw;
-    height: auto;
-  }
+    background-color: #FAF9F6;
+}
 
 .reviews h1 {
     text-align: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #791233;
+}
+
+.swiper-button-next {
+    padding-right: 5vw;
+}
+
+.swiper-button-prev {
+    padding-left: 5vw;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #791233;
 }
 
 .swiper-slide {
@@ -192,7 +197,7 @@ h1 {
     background-color: #FAF9F6;
     width: 300px;
     color: black;
-    height: 500px;
+    height: 100%;
     width: 100%;
     padding: 20px 20vw 20px 20vw;
     box-sizing: border-box;
@@ -371,5 +376,13 @@ h1 {
     .welcome-info {
         padding-top: 50px;
         padding-bottom: 40px;
+    }
+
+    .swiper-button-next {
+        padding-right: 1vw;
+    }
+    
+    .swiper-button-prev {
+        padding-left: 1vw;
     }
 }

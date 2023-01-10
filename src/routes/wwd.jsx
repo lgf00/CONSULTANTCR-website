@@ -2,10 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import CountUp from 'react-countup';
 import './styles/wwd.css'
+import { Helmet } from 'react-helmet';
 
 export default function WWD() {
   return (
     <div className='content'>
+      <Helmet>
+        <title>What We Do - CONSULTANTCR</title>
+        <meta name="description" content="With more than 15 Years of professional working experience in regulatory operations and regulatory affairs we are proud to be able to help our clients to the fullest ability.
+          Listed below are areas we have helped our clients with for countless years. From regulatory operations to eCTD publishing support, we got your covered."/>
+      </Helmet>
       <div className='section'>
         <h1><span style={{color: "#0A1D33"}}>What</span><span style={{color: "#748EC7"}}> We </span><span style={{color: "#0A1D33"}}>Do</span></h1>
         <div className='numbers'>
@@ -13,7 +19,7 @@ export default function WWD() {
           <div className='counter RBgrad'>
             <CountUp
               className='IND'
-              end={5816}
+              end={3816}
               duration={4}
               useEasing={true}
               easingFn={(t, b, c, d) => (t===d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b}

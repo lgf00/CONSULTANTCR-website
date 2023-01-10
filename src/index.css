@@ -160,7 +160,6 @@ a {
 @media screen and (max-width: 1000px) {
   .footer-waves svg {
       width: calc(200% + 1.3px);
-
   }
 }
 
