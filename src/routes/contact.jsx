@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './styles/contact.css';
 import Sent from '../components/Sent';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 export default function Contact() {
   const form = useRef();
@@ -24,10 +24,12 @@ export default function Contact() {
 
   return (
     <>
-      <Helmet>
-        <title>Get In Touch - CONSULTANTCR</title>
-        <meta name="description" content="Ready to expedite your development journey? Have any questions on what we can do for you? Reach out! Let's get to know one another."/>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>Get In Touch - CONSULTANTCR</title>
+          <meta name="description" content="Ready to expedite your development journey? Have any questions on what we can do for you? Reach out! Let's get to know one another."/>
+        </Helmet>
+      </HelmetProvider>
       {sent ? <Sent/> : 
       <div className="content">
         <div className='contact-content'>

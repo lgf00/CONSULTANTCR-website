@@ -2,16 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles/about.css'
 import avatar from '../images/avatar.jpg'
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 export default function About() {
   return (
     <div className="about">
-      <Helmet>
-        <title>About Alonso Guzman - CONSULTANTCR</title>
-        <meta name="description" content="Alonso Guzman is a Regulatory Affairs Specialist with more than 15 years of experience.  Mr. Guzman has extensive experience helping pharmaceutical companies worldwide to gain approval for their medicines in a timely and cost-effective manner
-        ..."/>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>About - CONSULTANTCR</title>
+          <meta name="description" content="Alonso Guzman is a Regulatory Affairs Specialist with more than 15 years of experience.  Mr. Guzman has extensive experience helping pharmaceutical companies worldwide to gain approval for their medicines in a timely and cost-effective manner
+          ..."/>
+        </Helmet>
+      </HelmetProvider>
       <div className="banner">
         <div className="custom-shape-divider-top-1666377012">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
